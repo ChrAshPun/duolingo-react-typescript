@@ -1,0 +1,47 @@
+.BtnBg {
+  position: relative;
+  width: 270px;
+  height: 52px;
+  background-color: #767EB9;
+  border-radius: 8px;
+}
+
+button {
+  position: absolute;
+  display: block;
+  width: 270px;
+  height: 52px;
+  font-family: 'Rubik';
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: top 50ms ease;
+}
+
+.BtnUp {
+  top: -8px;
+}
+.BtnDown {
+  top: 0px;
+}
+
+.Purple {
+  color: #535EB1;
+  border: 3px solid #767EB9;
+}
+
+.Pink {
+  color: #e37eb4;
+  border: 3px solid #e37eb4;
+}
+
+.GreenBtn {
+  color: #46CB92;
+  border: 3px solid #46CB92;
+}
+
+.RedBtn {
+  color: #D95151;
+  border: 3px solid #D95151;
+}

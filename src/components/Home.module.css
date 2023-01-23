@@ -1,0 +1,82 @@
+.Container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #535EB1;
+}
+
+.Box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  animation-name: show-box;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show-box {
+  0% {
+    opacity: 0;
+    top: 32%;
+  }
+  100% {
+    opacity: 1;
+    top: 30%;
+  }
+}
+
+.Box h1 {
+  color: #EFF3FF;
+}
+
+.Box h3 {
+  color: #B7C5F1;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.BtnBg {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 30px;
+  background-color: #767EB9;
+  border-radius: 6px;
+  margin: 20px auto;
+}
+
+.Box button {
+  position: absolute;
+  display: block;
+  width: 220px;
+  font-family: 'Rubik';
+  font-weight: 600;
+  color: #535EB1;
+  padding: 8px 0;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: top 50ms;
+}
+
+.BtnDown {
+  top: 0px;
+}
+
+.BtnUp {
+  top: -8px;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #B7C5F1;
+}

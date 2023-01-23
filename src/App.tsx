@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { createContext, useState } from 'react';
+// import axios from 'axios';
 import './App.css';
+// import { SpanishWord } from './model';
+import { SettingsContext } from './model';
+import { Routes, Route, } from "react-router-dom";
+import Home from "./components/Home"
+import GameSettings from "./components/GameSettings"
+import MatchGamePage from './components/MatchGamePage';
 
-function App() {
+export const Context = createContext<SettingsContext | null>(null);
+
+const App: React.FC = () => {
+
+  const [timer, setTimer] = useState<number>(60);
+  const [hearts, setHearts] = useState<number>(3);
+  
+  const value: SettingsContext = {timer, setTimer, hearts, setHearts};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Context.Provider value={value}>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/settings" element={<GameSettings />} />
+          <Route path="/matchgame" element={<MatchGamePage />} />
+      </Routes>
+    </Context.Provider>
+  )
 }
 
 export default App;

@@ -1,0 +1,248 @@
+.Container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #535EB1;
+}
+
+
+.Container .Box {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 560px;
+  text-align: left;
+  /* border: 1px solid #767EB9; */
+}
+
+.FadeOutMatchGame {
+  animation-name: fade-out-match-game;
+  animation-delay: 2s;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out-match-game {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.Container .Box h3 {
+  color: #B7C5F1;
+  padding-bottom: 20px;
+}
+
+.Container .Box button {
+  position: absolute;
+  display: block;
+  width: 270px;
+  height: 52px;
+  font-family: 'Rubik';
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  /* border: none; */
+  cursor: pointer;
+  transition: top 30ms ease;
+}
+
+.BtnDefault {
+  top: -4px;
+  color: #535EB1;
+  border: 3px solid #767EB9;
+}
+
+.Column .BtnBg {
+  position: relative;
+  display: block;
+  width: 270px;
+  height: 52px;
+  border-radius: 8px;
+  margin: 6px auto 0 auto;
+}
+
+.Column .Placeholder {
+  width: 220px;
+  min-height: 58px;
+  background-color: #535EB1;
+}
+
+.GameField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.BounceOne {
+  animation-name: bounce-one;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+.BounceTwo {
+  animation-name: bounce-two;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-one {
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -4px;
+  }
+}
+
+@keyframes bounce-two {
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -4px;
+  }
+}
+
+.PinkBtn {
+  top: -4px;
+  color: #e37eb4;
+  border: 3px solid #e37eb4;
+  animation-name: bounce-one;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+.PurpleBtn {
+  top: -4px;
+  color: #535EB1;
+  border: 3px solid #767EB9;
+  animation-name: bounce-two;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+.GreenBtn {
+  color: #46CB92;
+  border: 3px solid #46CB92;
+}
+
+.RedBtn {
+  color: #D95151;
+  border: 3px solid #D95151;
+}
+
+.BtnDown {
+  top: -4px;
+  color: #e37eb4;
+  border: 3px solid #e37eb4;
+}
+
+.BtnUp {
+  top: -4px;
+  color: #535EB1;
+  border: 3px solid #767EB9;
+  animation-name: bounce-two;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 360px;
+}
+
+
+.PurpleBg {
+  background-color: #767EB9;
+}
+.PinkBg {
+  background-color: #e37eb4;
+}
+.GreenBg {
+  background-color: #46CB92;
+}
+.RedBg {
+  background-color: #D95151;
+}
+
+.FadeIn {
+  animation-name: fade-in;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.FadeOut {
+  animation-name: fade-out;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.Pink {
+  color: #e37eb4;
+}
+
+.Purple {
+  color: #535EB1;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.Footer .BottomBorder {
+  border-top: 3px solid #868ED3;
+  padding-bottom: 15px;
+}
+
+.Footer .Box {
+  width: 560px;
+  height: 42px;
+}
+
+.ExitGameBtn {
+  max-width: 180px;
+  text-align: center;
+  font-family: 'Rubik';
+  font-size: 16px;
+  font-weight: 600;
+  color: #868ED3;
+  background-color: #535EB1;
+  padding: 8px 0;
+  border: 3px solid #868ED3;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+.Container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #535EB1;
+}
+
+.Box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.Box h1 {
+  color: #EFF3FF;
+}
+
+.Box button {
+  position: absolute;
+  display: block;
+  font-family: 'Rubik';
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: top 50ms;
+}
+
+.Content {
+  height: 80px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Row h3 {
+  color: #B7C5F1;
+  font-weight: 500;
+  padding: 0 10px 8px 10px;
+}
+
+.SmBtnBg {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 28px;
+  background-color: #767EB9;
+  border-radius: 6px;
+  margin: 0 8px;
+}
+
+.SmBtn {
+  width: 100px;
+  padding: 6px 0;
+}
+
+.SmBtnUp {
+  top: -6px;
+  color: #767EB9;
+}
+
+.SmBtnDown {
+  top: 0px;
+  color: #e37eb4;
+}
+
+.BackBtnBg {
+  position: relative;
+  display: block;
+  width: 220px;
+  height: 30px;
+  background-color: #767EB9;
+  border-radius: 6px;
+  margin: 20px auto;
+}
+
+.BackBtn {
+  width: 220px;
+  color: #767EB9;
+  padding: 8px 0;
+}
+
+.BackBtnDown {
+  top: 0px;
+}
+
+.BackBtnUp {
+  top: -8px;
+}
+
+.Footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #B7C5F1;
+}

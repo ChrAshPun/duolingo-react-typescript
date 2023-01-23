@@ -1,0 +1,27 @@
+.exit-game-btn-enter {
+  color: #868ED3;
+  border: 3px solid #868ED3;
+}
+.exit-game-btn-enter-active {
+  color: #A2A9E2;
+  border: 3px solid #A2A9E2;
+  transition: all 200ms;
+}
+.exit-game-btn-enter-done {
+  color: #A2A9E2;
+  border: 3px solid #A2A9E2;
+}
+
+.exit-game-btn-exit {
+  color: #A2A9E2;
+  border: 3px solid #A2A9E2;
+}
+.exit-game-btn-exit-active {
+  color: #868ED3;
+  border: 3px solid #868ED3;
+  transition: all 200ms;
+}
+.my-node-exit-done {
+  color: #868ED3;
+  border: 3px solid #868ED3;
+}
