@@ -17,44 +17,20 @@ const MatchGamePage: React.FC = () => {
   const [gameOver, setGameOver] = useState<boolean>(false);
   const [gameOn, setGameOn] = useState<boolean>(true);
 
-  const resetStates = () => {
+  const resetStates = async () => {
     setIsLoaded(false)
     setHeartsCopy(hearts)
     setPlayerWon(false)
     setPlayerLost(false)
     setGameOver(false)
     setGameOn(true)
-    // setWordList([])
-    setWordList([
-      {
-          "spa": "el cuello",
-          "eng": "neck"
-      },
-      {
-          "spa": "pensar",
-          "eng": "to think"
-      },
-      {
-        "spa": "el cuello",
-        "eng": "neck"
-      },
-      {
-        "spa": "pensar",
-        "eng": "to think"
-      },      
-      {
-      "spa": "el cuello",
-      "eng": "neck"
-      },
-    ])
-    setIsLoaded(true)
-    // getWordList()
+    await getWordList()
   }
 
   const getWordList = async () => {
     const querySize: string = (timer === 60) ? '45' : '60';
     await axios.get(
-      "http://localhost:8000/api/spanishdict/",
+      "https://54.90.61.223:8000/api/spanishdict/",
       { params: { sample: querySize }},
     )
       .then((res) => {
@@ -65,6 +41,7 @@ const MatchGamePage: React.FC = () => {
         console.log(err)
       })
   }
+
   useEffect(() => {
     resetStates()
   },[])
@@ -109,8 +86,9 @@ const MatchGamePage: React.FC = () => {
             />
           }
         </div>
-      : 
-      null }
+        : 
+        <div className={styles.Container}></div> 
+      }
     </>
   )
 }
